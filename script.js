@@ -1,3 +1,19 @@
+// 우클릭 방지
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+// 키보드 단축키 방지
+document.addEventListener('keydown', function(e) {
+    // F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U
+    if (e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) || 
+        (e.ctrlKey && e.key === 'U')) {
+        e.preventDefault();
+    }
+});
+
+
 let interval;
 let dotCount = 0;
 let increasing = true;
@@ -48,3 +64,4 @@ function updateDots() {
     }
     statusMessage.textContent = '분석중' + '.'.repeat(dotCount);
 }
+
