@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고급형 문자 분석기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-top: -20px;">Advanced Analyzer V1</h1>
+        <hr style="width: 345px; margin-top:-15px">
+        <br><br>
+        <input type="text" id="userInput" placeholder="문자를 입력하세요">&nbsp;
+        <button onclick="startAnalysis()">분석시작</button>
+        <p id="statusMessage"></p>
+        <div id="loadingBar" class="loading-bar"></div>
+        <p id="result" style="font-size: 40px"></p>
+        <div class="tec">
+            <p>고급 <strong>블록체인</strong> 기술이 적용된 차세대 인공지능<br>접목식 문자 분석로직 인공지능 <strong><span style="font-size: 22px;">'Advanced Analyzer V1'</span></strong></p>
+            <hr>
+            <p>
+                블록체인(Blockchain)은 데이터를 안전하게 저장하고 투명하게 공유할 수 있는 분산형 데이터베이스 기술입니다. 블록체인의 주요 특징은 변경 불가능성과 탈중앙화입니다. 이를 통해 신뢰할 수 있는 제3자 없이도 거래와 데이터의 무결성을 유지할 수 있습니다.
+
+                블록체인의 원리
+                블록과 체인:
+
+                블록체인은 이름 그대로 '블록'들이 '체인'처럼 연결된 구조입니다. 각 블록은 일정량의 데이터를 담고 있으며, 그 데이터는 주로 거래 정보입니다.
+                블록은 이전 블록의 해시 값을 포함하고 있어 서로 연결됩니다. 해시 값은 블록의 데이터가 고유하게 생성되는 암호화된 값입니다. 이로 인해 블록이 변경되면 해시 값도 변경되므로, 특정 블록을 변경하려면 그 이후의 모든 블록을 변경해야 합니다.
+                분산 원장:
+
+                블록체인은 중앙 서버가 아닌 여러 노드(컴퓨터)에 분산되어 저장됩니다. 모든 노드는 동일한 원장 사본을 가지고 있어 데이터의 신뢰성을 높입니다.
+                분산 네트워크에서는 새로운 블록이 추가될 때 모든 노드가 이를 검증하고 합의에 도달해야 합니다.
+                합의 알고리즘:
+
+                블록체인은 합의를 통해 거래의 유효성을 검증합니다. 대표적인 합의 알고리즘으로는 작업 증명(Proof of Work, PoW)과 지분 증명(Proof of Stake, PoS)이 있습니다.
+                PoW는 새로운 블록을 추가하기 위해 복잡한 수학 문제를 푸는 과정이며, 이를 통해 거래를 검증하고 네트워크를 보호합니다. 이는 많은 연산 자원을 필요로 합니다.
+                PoS는 네트워크 참여자의 보유 지분에 따라 블록 생성 권한을 부여하는 방식입니다. 에너지 효율성이 높아 PoW의 대안으로 많이 사용됩니다.
+                변경 불가능성:
+
+                블록체인에 저장된 데이터는 변경이 불가능합니다. 이는 각 블록이 이전 블록의 해시 값을 포함하고 있어, 블록을 조작하려면 모든 후속 블록을 다시 계산해야 하기 때문입니다.
+                네트워크에 참여하는 다수의 노드가 동일한 데이터를 보유하고 있어, 단일 노드의 조작이 전체 데이터에 영향을 미치기 어렵습니다.
+
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 BLACKPEN CODE All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
