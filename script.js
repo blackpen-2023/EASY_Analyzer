@@ -13,11 +13,6 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-
-let interval;
-let dotCount = 0;
-let increasing = true;
-
 function startAnalysis() {
     const userInput = document.getElementById('userInput').value;
     const loadingBar = document.getElementById('loadingBar');
@@ -44,7 +39,7 @@ function startAnalysis() {
     setTimeout(() => {
         clearInterval(interval);
         statusMessage.textContent = '';
-        result.textContent = '분석결과 : '+userInput;
+        result.textContent = userInput;
         loadingBar.classList.add('hidden');
     }, 3000);
 }
