@@ -55,6 +55,8 @@ input {
     box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
     margin-bottom: 10px; /* 입력 필드 간격 추가 */
     width: calc(100% - 44px); /* 패딩 포함하여 전체 너비 사용 */
+    max-width: 100%; /* 최대 너비를 100%로 설정 */
+    box-sizing: border-box; /* 패딩 포함한 박스 크기 계산 */
 }
 
 #statusMessage {
@@ -95,7 +97,7 @@ footer {
         padding: 5px 10px;
     }
     input, button {
-        width: 100%; /* 전체 너비 사용 */
+        width: calc(100% - 22px); /* 패딩 포함하여 전체 너비 사용 */
         margin-bottom: 10px; /* 버튼과 입력 필드 사이 간격 */
     }
     h1 {
