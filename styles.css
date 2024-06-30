@@ -7,10 +7,14 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    padding: 20px; /* 패딩 추가 */
+    box-sizing: border-box; /* 전체 패딩 포함 */
 }
 
 .container {
     text-align: center;
+    width: 100%; /* 전체 너비 사용 */
+    max-width: 600px; /* 최대 너비 설정 */
 }
 
 .loading-bar {
@@ -59,14 +63,36 @@ input {
     box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
     border: 0px;
     border-radius: 1rem;
-    width: 500px;
+    width: 100%; /* 전체 너비 사용 */
+    max-width: 500px; /* 최대 너비 설정 */
+    margin: auto;
+    box-sizing: border-box; /* 전체 패딩 포함 */
 }
+
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 20px; /* 패딩 수정 */
     background-color: #e7e7e7;
     color: gray;
     width: 100%;
     position: fixed;
     bottom: 0;
+    box-sizing: border-box; /* 전체 패딩 포함 */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .tec {
+        width: 100%;
+        padding: 5px 10px;
+    }
+    footer {
+        padding: 5px 10px;
+    }
+    input, button {
+        width: calc(100% - 22px); /* 패딩 포함하여 전체 너비 사용 */
+        margin-bottom: 10px; /* 버튼과 입력 필드 사이 간격 */
+    }
 }

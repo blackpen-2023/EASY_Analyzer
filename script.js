@@ -39,7 +39,7 @@ function startAnalysis() {
     setTimeout(() => {
         clearInterval(interval);
         statusMessage.textContent = '';
-        result.textContent = userInput;
+        result.textContent = '분석결과 : '+userInput;
         loadingBar.classList.add('hidden');
     }, 3000);
 }
