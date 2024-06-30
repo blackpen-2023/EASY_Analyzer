@@ -15,6 +15,8 @@ body {
     text-align: center;
     width: 100%;
     max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .loading-bar {
@@ -43,7 +45,10 @@ button {
     color: gray;
     padding: 7px 20px;
     box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
-    margin-top: 10px; /* 버튼 간격 추가 */
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 input {
@@ -53,10 +58,10 @@ input {
     color: gray;
     padding: 7px 20px;
     box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
-    margin-bottom: 10px; /* 입력 필드 간격 추가 */
-    width: calc(100% - 44px); /* 패딩 포함하여 전체 너비 사용 */
-    max-width: 100%; /* 최대 너비를 100%로 설정 */
-    box-sizing: border-box; /* 패딩 포함한 박스 크기 계산 */
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 #statusMessage {
@@ -97,8 +102,8 @@ footer {
         padding: 5px 10px;
     }
     input, button {
-        width: calc(100% - 22px); /* 패딩 포함하여 전체 너비 사용 */
-        margin-bottom: 10px; /* 버튼과 입력 필드 사이 간격 */
+        width: 100%; /* 전체 너비 사용 */
+        margin-bottom: 10px;
     }
     h1 {
         font-size: 24px; /* 모바일에서 제목 크기 조절 */
