@@ -4,17 +4,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-    padding: 20px; /* 패딩 추가 */
-    box-sizing: border-box; /* 전체 패딩 포함 */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
     text-align: center;
-    width: 100%; /* 전체 너비 사용 */
-    max-width: 600px; /* 최대 너비 설정 */
+    width: 100%;
+    max-width: 600px;
 }
 
 .loading-bar {
@@ -39,19 +39,22 @@ body {
 button {
     background-color: rgb(255, 255, 255);
     border-radius: 0.4rem;
-    border: none 0px ;
+    border: none 0px;
     color: gray;
-    padding: 7px 20px 7px 20px;
+    padding: 7px 20px;
     box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
+    margin-top: 10px; /* 버튼 간격 추가 */
 }
 
 input {
     background-color: rgb(255, 255, 255);
     border-radius: 0.4rem;
-    border: none 0px ;
+    border: none 0px;
     color: gray;
-    padding: 7px 20px 7px 20px;
+    padding: 7px 20px;
     box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
+    margin-bottom: 10px; /* 입력 필드 간격 추가 */
+    width: calc(100% - 44px); /* 패딩 포함하여 전체 너비 사용 */
 }
 
 #statusMessage {
@@ -59,25 +62,25 @@ input {
 }
 
 .tec {
-    padding: 7px 20px 7px 20px;
+    padding: 7px 20px;
     box-shadow: rgba(0, 0, 0, 0.126) 0px 0px 10px;
     border: 0px;
     border-radius: 1rem;
-    width: 100%; /* 전체 너비 사용 */
-    max-width: 500px; /* 최대 너비 설정 */
+    width: 100%;
+    max-width: 500px;
     margin: auto;
-    box-sizing: border-box; /* 전체 패딩 포함 */
+    box-sizing: border-box;
 }
 
 footer {
     text-align: center;
-    padding: 10px 20px; /* 패딩 수정 */
+    padding: 10px 20px;
     background-color: #e7e7e7;
     color: gray;
     width: 100%;
     position: fixed;
     bottom: 0;
-    box-sizing: border-box; /* 전체 패딩 포함 */
+    box-sizing: border-box;
 }
 
 @media (max-width: 600px) {
@@ -92,7 +95,18 @@ footer {
         padding: 5px 10px;
     }
     input, button {
-        width: calc(100% - 22px); /* 패딩 포함하여 전체 너비 사용 */
+        width: 100%; /* 전체 너비 사용 */
         margin-bottom: 10px; /* 버튼과 입력 필드 사이 간격 */
+    }
+    h1 {
+        font-size: 24px; /* 모바일에서 제목 크기 조절 */
+        margin-top: 0; /* 모바일에서 마진 조정 */
+    }
+    hr {
+        width: 100%; /* 모바일에서 hr 너비 조정 */
+        margin-top: 0; /* 모바일에서 마진 조정 */
+    }
+    #result {
+        font-size: 24px; /* 모바일에서 결과 텍스트 크기 조정 */
     }
 }
