@@ -39,7 +39,7 @@ function startAnalysis() {
     setTimeout(() => {
         clearInterval(interval);
         statusMessage.textContent = '';
-        result.textContent = '분석결과 : '+userInput;
+        result.textContent = '입력값을 분석한 결과 입력값은 \''+userInput+'\' 입니다.';
         loadingBar.classList.add('hidden');
     }, 3000);
 }
